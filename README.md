@@ -1,1 +1,0 @@
-# imyd-xmpp-common

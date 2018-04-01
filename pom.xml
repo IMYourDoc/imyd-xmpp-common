@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>com.imyd</groupId>
+		<artifactId>imyd-parent</artifactId>
+		<version>1.0.0-SNAPSHOT</version>
+	</parent>
+
+	<artifactId>imyd-xmpp-common</artifactId>
+	<version>1.0.0-SNAPSHOT</version>
+
+	<name>imyd-xmpp-common</name>
+	<description>imyd-xmpp-common</description>
+
+	<packaging>jar</packaging>
+
+	<dependencies>
+
+		<!-- imyd dependencies -->
+
+		<dependency>
+			<groupId>com.imyd</groupId>
+			<artifactId>imyd-common</artifactId>
+			<version>1.0.0-SNAPSHOT</version>
+		</dependency>
+
+		<!--&lt;!&ndash; Spring &ndash;&gt;-->
+
+		<!--<dependency>-->
+			<!--<groupId>org.springframework.boot</groupId>-->
+			<!--<artifactId>spring-boot-starter-actuator</artifactId>-->
+		<!--</dependency>-->
+
+		<!--<dependency>-->
+			<!--<groupId>org.springframework.boot</groupId>-->
+			<!--<artifactId>spring-boot-starter-ws</artifactId>-->
+		<!--</dependency>-->
+
+		<!--<dependency>-->
+			<!--<groupId>org.springframework.boot</groupId>-->
+			<!--<artifactId>spring-boot-starter-security</artifactId>-->
+		<!--</dependency>-->
+
+		<!--<dependency>-->
+			<!--<groupId>com.github.ulisesbocchio</groupId>-->
+			<!--<artifactId>jasypt-spring-boot-starter</artifactId>-->
+		<!--</dependency>-->
+
+		<!--<dependency>-->
+			<!--<groupId>org.springframework.boot</groupId>-->
+			<!--<artifactId>spring-boot-starter-thymeleaf</artifactId>-->
+		<!--</dependency>-->
+
+		<!--<dependency>-->
+			<!--<groupId>org.springframework.boot</groupId>-->
+			<!--<artifactId>spring-boot-starter-tomcat</artifactId>-->
+			<!--<scope>provided</scope>-->
+		<!--</dependency>-->
+
+        <!--<dependency>-->
+            <!--<groupId>org.springframework.session</groupId>-->
+            <!--<artifactId>spring-session</artifactId>-->
+            <!--<version>1.2.0.RELEASE</version>-->
+        <!--</dependency>-->
+
+        <!--<dependency>-->
+            <!--<groupId>org.springframework.session</groupId>-->
+            <!--<artifactId>spring-session-data-redis</artifactId>-->
+            <!--<version>1.2.0.RELEASE</version>-->
+        <!--</dependency>-->
+
+        <!--&lt;!&ndash; Swagger &ndash;&gt;-->
+
+		<!--<dependency>-->
+			<!--<groupId>io.springfox</groupId>-->
+			<!--<artifactId>springfox-swagger2</artifactId>-->
+		<!--</dependency>-->
+
+		<!--<dependency>-->
+			<!--<groupId>io.springfox</groupId>-->
+			<!--<artifactId>springfox-swagger-ui</artifactId>-->
+		<!--</dependency>-->
+
+		<!--<dependency>-->
+			<!--<groupId>org.apache.httpcomponents</groupId>-->
+			<!--<artifactId>httpclient</artifactId>-->
+		<!--</dependency>-->
+
+		<!--<dependency>-->
+			<!--<groupId>commons-io</groupId>-->
+			<!--<artifactId>commons-io</artifactId>-->
+		<!--</dependency>-->
+
+		<!--&lt;!&ndash; Sendgrid &ndash;&gt;-->
+
+		<!--<dependency>-->
+			<!--<groupId>com.sendgrid</groupId>-->
+			<!--<artifactId>sendgrid-java</artifactId>-->
+			<!--<version>3.2.1</version>-->
+		<!--</dependency>-->
+
+		<!--&lt;!&ndash; Android &ndash;&gt;-->
+
+		<!--<dependency>-->
+			<!--<groupId>com.google.gcm</groupId>-->
+			<!--<artifactId>gcm-server</artifactId>-->
+			<!--<version>1.0.0</version>-->
+		<!--</dependency>-->
+
+		<!--<dependency>-->
+			<!--<groupId>com.googlecode.json-simple</groupId>-->
+			<!--<artifactId>json-simple</artifactId>-->
+			<!--<version>1.1.1</version>-->
+		<!--</dependency>-->
+
+		<!--&lt;!&ndash; iOS &ndash;&gt;-->
+
+		<!--<dependency>-->
+			<!--<groupId>com.notnoop.apns</groupId>-->
+			<!--<artifactId>apns</artifactId>-->
+			<!--<version>1.0.0.Beta6</version>-->
+		<!--</dependency>-->
+
+        <!-- Smack -->
+
+        <dependency>
+            <groupId>org.igniterealtime.smack</groupId>
+            <artifactId>smack-extensions</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.igniterealtime.smack</groupId>
+            <artifactId>smack-im</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.igniterealtime.smack</groupId>
+            <artifactId>smack-java7</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.igniterealtime.smack</groupId>
+            <artifactId>smack-tcp</artifactId>
+        </dependency>
+
+		<dependency>
+			<groupId>com.google.guava</groupId>
+			<artifactId>guava</artifactId>
+			<version>23.1-jre</version>
+		</dependency>
+		<dependency>
+			<groupId>javax.inject</groupId>
+			<artifactId>javax.inject</artifactId>
+			<version>1</version>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>1.7.25</version>
+		</dependency>
+        <dependency>
+            <groupId>com.imyd.openfire</groupId>
+            <artifactId>imyd-openfire-model</artifactId>
+            <version>1.0.0-SNAPSHOT</version>
+        </dependency>
+
+
+        <!--&lt;!&ndash; Test &ndash;&gt;-->
+
+		<!--<dependency>-->
+			<!--<groupId>org.springframework.boot</groupId>-->
+			<!--<artifactId>spring-boot-starter-test</artifactId>-->
+			<!--<scope>test</scope>-->
+		<!--</dependency>-->
+
+		<!--<dependency>-->
+			<!--<groupId>com.jayway.jsonpath</groupId>-->
+			<!--<artifactId>json-path</artifactId>-->
+			<!--<scope>test</scope>-->
+		<!--</dependency>-->
+
+		<!--<dependency>-->
+			<!--<groupId>com.jayway.jsonpath</groupId>-->
+			<!--<artifactId>json-path-assert</artifactId>-->
+			<!--<scope>test</scope>-->
+		<!--</dependency>-->
+
+		<!--<dependency>-->
+			<!--<groupId>org.springframework.ldap</groupId>-->
+			<!--<artifactId>spring-ldap-core</artifactId>-->
+			<!--<version>2.0.2.RELEASE</version>-->
+		<!--</dependency>-->
+	</dependencies>
+
+	<build>
+		<plugins>
+
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+				<version>${spring-boot.version}</version>
+				<configuration>
+					<executable>true</executable>
+				</configuration>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-war-plugin</artifactId>
+				<version>2.6</version>
+				<configuration>
+					<failOnMissingWebXml>false</failOnMissingWebXml>
+				</configuration>
+			</plugin>
+		</plugins>
+
+		<extensions>
+			<extension>
+				<groupId>org.apache.maven.wagon</groupId>
+				<artifactId>wagon-http-lightweight</artifactId>
+				<version>2.10</version>
+			</extension>
+		</extensions>
+	</build>
+
+	<dependencyManagement>
+		<dependencies>
+
+			<dependency>
+				<!-- Import dependency management from Spring Boot -->
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-dependencies</artifactId>
+				<version>${spring-boot.version}</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+
+		</dependencies>
+	</dependencyManagement>
+
+</project>
